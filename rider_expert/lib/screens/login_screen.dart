@@ -63,13 +63,15 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20.sp),
-              const Text("OR"),
+              const Text("OR", style: TextStyle(
+                fontSize: 20,
+              ),),
               SizedBox(height: 20.sp),
               ElevatedButton.icon(
                 icon: SvgPicture.asset("assets/images/apple_logo.svg"),
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Theme.of(context).colorScheme.secondary,
+                  backgroundColor: Theme.of(context).colorScheme.background,
                     padding: EdgeInsets.symmetric(
                         vertical: 8.sp, horizontal: 15.w)),
                 label: Text(
@@ -88,7 +90,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Theme.of(context).colorScheme.secondary,
+                  backgroundColor: Theme.of(context).colorScheme.background,
                   padding:  EdgeInsets.symmetric(
                     vertical: 8.sp,
                     horizontal: 15.w,
@@ -109,7 +111,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Theme.of(context).colorScheme.secondary,
+                  backgroundColor: Theme.of(context).colorScheme.background,
                     padding: EdgeInsets.symmetric(
                   vertical: 8.sp,
                   horizontal: 13.w,
