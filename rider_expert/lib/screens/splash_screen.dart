@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:rider_expert/screens/login_screen.dart';
 import 'package:sizer/sizer.dart';
 
@@ -25,18 +26,13 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
         body: Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            "TM30",
-            style: TextStyle(color: Colors.lightBlue, fontSize: 90.sp),
-          )
-          // Image.asset(
-          //   // "assets/images/rider_expert_logo.png",
-          //   // width: 100.h,
-          // ),
+          // SvgPicture.asset("assets/images/apple_logo.svg"),
+          SvgPicture.asset("assets/images/RiderExpert.svg", width: 70.w, ),
         ],
       ),
     ));

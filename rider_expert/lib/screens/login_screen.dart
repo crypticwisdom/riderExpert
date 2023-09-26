@@ -22,6 +22,7 @@ class LoginScreen extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18.sp,
+                    color: Theme.of(context).colorScheme.primary
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -41,17 +42,20 @@ class LoginScreen extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {},
+
                 child: Text(
                   "Sign In",
-                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                        color: Theme.of(context).colorScheme.onPrimary,
-                      ),
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.primary,
+                    fontSize: 13.sp
+                  ),
+                      
                 ),
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.sp),
                   ),
-                  backgroundColor: Colors.red,
+                  backgroundColor: Theme.of(context).colorScheme.background,
                   padding: EdgeInsets.symmetric(
                     vertical: 11.sp,
                     horizontal: 80.sp,
@@ -65,13 +69,15 @@ class LoginScreen extends StatelessWidget {
                 icon: SvgPicture.asset("assets/images/apple_logo.svg"),
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 11, horizontal: 70)),
+                  backgroundColor: Theme.of(context).colorScheme.secondary,
+                    padding: EdgeInsets.symmetric(
+                        vertical: 8.sp, horizontal: 15.w)),
                 label: Text(
-                  "Continue with Facebook",
-                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                        color: Theme.of(context).colorScheme.errorContainer,
-                      ),
+                  "Continue with Apple",
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.primary,
+                    fontSize: 13.sp
+                  ),
                 ),
               ),
               SizedBox(height: 20.sp),
@@ -82,16 +88,18 @@ class LoginScreen extends StatelessWidget {
                 ),
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 11,
-                    horizontal: 80,
+                  backgroundColor: Theme.of(context).colorScheme.secondary,
+                  padding:  EdgeInsets.symmetric(
+                    vertical: 8.sp,
+                    horizontal: 15.w,
                   ),
                 ),
                 label: Text(
                   "Continue with Google",
-                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                        color: Theme.of(context).colorScheme.errorContainer,
-                      ),
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.primary,
+                    fontSize: 13.sp
+                  ),
                 ),
               ),
               SizedBox(height: 20.sp),
@@ -101,15 +109,18 @@ class LoginScreen extends StatelessWidget {
                 ),
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(
-                  vertical: 11,
-                  horizontal: 70,
+                  backgroundColor: Theme.of(context).colorScheme.secondary,
+                    padding: EdgeInsets.symmetric(
+                  vertical: 8.sp,
+                  horizontal: 13.w,
                 )),
                 label: Text(
                   "Continue with Facebook",
-                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                        color: Theme.of(context).colorScheme.errorContainer,
-                      ),
+                  
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.primary,
+                    fontSize: 13.sp
+                  ),
                 ),
               ),
             ],
